@@ -9,11 +9,10 @@ resolution-markers = [
 
 [[package]]
 name = "36120-26sp-group36-25611094-package"
-version = "0.1.5"
+version = "0.1.6"
 source = { registry = "https://test.pypi.org/simple/" }
-sdist = { url = "https://test-files.pythonhosted.org/packages/5e/13/0101eb1e4055bc6379467c921fdb2b8d606c9c33ad4f9c8c0db86e402401/36120_26sp_group36_25611094_package-0.1.5.tar.gz", hash = "sha256:6f8ee6269008505a5f0b924c3ee25962f03f3210309de7632c256630e7f1dedc", size = 9499, upload-time = "2026-08-22T04:19:23.68Z" }
 wheels = [
-    { url = "https://test-files.pythonhosted.org/packages/56/2d/c217153bb9a137378fdd88d25d6cae4077928fc97305a447860d48019b76/36120_26sp_group36_25611094_package-0.1.5-py3-none-any.whl", hash = "sha256:1e449098530864f872c939804639a4803fdfec8b6425fa0c20eba71e51fb3905", size = 14744, upload-time = "2026-08-22T04:19:22.335Z" },
+    { url = "https://test-files.pythonhosted.org/packages/98/80/b5561ef1d940fb42bfbf4f072e9745f09a8603d374174841b87acd00a690/36120_26sp_group36_25611094_package-0.1.6-py3-none-any.whl", hash = "sha256:357a67d514cdcee2d294d53ff97b3930520c6220ed52e9af0df7a2d26c265c35", size = 14960, upload-time = "2026-08-24T05:57:54.427Z" },
 ]
 
 [[package]]
@@ -71,7 +70,7 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "36120-26sp-group36-25611094-package", specifier = "==0.1.5", index = "https://test.pypi.org/simple/" }]
+dev = [{ name = "36120-26sp-group36-25611094-package", specifier = "==0.1.6", index = "https://test.pypi.org/simple/" }]
 
 [[package]]
 name = "annotated-doc"

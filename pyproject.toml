@@ -65,5 +65,5 @@ force-sort-within-sections = true
 
 [dependency-groups]
 dev = [
-    "36120-26sp-group36-25611094-package==0.1.5",
+    "36120-26sp-group36-25611094-package==0.1.6",
 ]

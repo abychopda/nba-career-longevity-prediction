@@ -35,3 +35,52 @@ def run_logistic_regression_grid_search(
     grid_search.fit(X_train, y_train)
 
     return grid_search
+
+
+def train_logistic_regression(
+    X_train,
+    y_train,
+    C=0.1,
+    class_weight=None,
+    penalty="l2",
+    solver="lbfgs",
+    max_iter=2000,
+    random_state=42,
+):
+    """
+    Train a Logistic Regression model using the supplied hyperparameters.
+
+    Returns:
+        model: Fitted LogisticRegression model.
+    """
+    model = LogisticRegression(
+        C=C,
+        class_weight=class_weight,
+        penalty=penalty,
+        solver=solver,
+        max_iter=max_iter,
+        random_state=random_state,
+    )
+
+    model.fit(X_train, y_train)
+
+    return model
+
+
+def evaluate_logistic_regression_auprc(
+    model,
+    X,
+    y,
+):
+    """
+    Evaluate a fitted Logistic Regression model using AUPRC.
+
+    Returns:
+        float: Average Precision score.
+    """
+    predicted_probabilities = model.predict_proba(X)[:, 1]
+
+    return average_precision_score(
+        y,
+        predicted_probabilities,
+    )

@@ -27,7 +27,7 @@ AAdv ML AT1 repo for group 36
 │                         `1.0-jqp-initial-data-exploration`.
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         36120_26sp_group36_experiments and configuration for tools like black
+│                         nba_career_predictor and configuration for tools like black
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -39,9 +39,9 @@ AAdv ML AT1 repo for group 36
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── 36120_26sp_group36_experiments   <- Source code for use in this project.
+└── nba_career_predictor   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes 36120_26sp_group36_experiments a Python module
+    ├── __init__.py             <- Makes nba_career_predictor a Python module
     │
     ├── config.py               <- Store useful variables and configuration
     │

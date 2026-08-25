@@ -16,14 +16,21 @@ classifiers = [
     
 ]
 dependencies = [
+    "jupyterlab==4.3.4",
     "loguru",
+    "matplotlib==3.9.4",
     "mkdocs",
     "nba-career-toolkit",
+    "pandas==2.2.3",
     "pip",
     "python-dotenv",
     "ruff",
+    "scikit-learn==1.6.1",
+    "seaborn==0.13.2",
     "tqdm",
     "typer",
+    "utstd>=0.1.9",
+    "xgboost==2.1.3",
 ]
 requires-python = "==3.13.9"
 

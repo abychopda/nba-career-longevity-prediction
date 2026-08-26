@@ -1021,7 +1021,7 @@ requires-dist = [
 
 [[package]]
 name = "nba-career-toolkit"
-version = "0.2.0"
+version = "1.0.0"
 source = { editable = "../36120-26SP-group36-26666293-package" }
 dependencies = [
     { name = "pandas" },

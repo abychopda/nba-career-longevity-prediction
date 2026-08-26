@@ -52,4 +52,4 @@ force-sort-within-sections = true
 
 
 [tool.uv.sources]
-nba-career-toolkit = { path = "../36120-26SP-group36-26666293-package", editable = true }
+nba-career-toolkit = { path = "../36120-26SP-group36-26164448-package", editable = true }

@@ -61,7 +61,7 @@ create_environment:
 ## Make dataset
 .PHONY: data
 data: requirements
-	$(PYTHON_INTERPRETER) 36120_26sp_group36_experiments/dataset.py
+	$(PYTHON_INTERPRETER) nba_career_predictor/dataset.py
 
 
 #################################################################################

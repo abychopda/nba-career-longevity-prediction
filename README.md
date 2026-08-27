@@ -6,6 +6,27 @@
 
 AAdv ML AT1 repo for group 36
 
+## Getting Started
+
+Requires [uv](https://docs.astral.sh/uv/) and Python 3.13.9.
+
+```bash
+uv sync
+```
+
+`nba-career-toolkit` resolves from TestPyPI automatically; pandas, scikit-learn and the rest
+resolve from PyPI as normal. No extra flags are needed for `uv sync` — a plain `pip install
+-r requirements.txt` will not find the toolkit, since only `uv sync` reads the index
+configuration in `pyproject.toml`.
+
+**Before running any notebook**, add the Kaggle competition's raw files to `data/raw/`:
+`train.csv`, `test.csv`, `sample_submission.csv`, `metadata.csv`. This directory is
+gitignored and not part of the repository.
+
+```bash
+uv run jupyter lab
+```
+
 ## Project Organization
 
 ```
@@ -27,7 +48,7 @@ AAdv ML AT1 repo for group 36
 │                         `1.0-jqp-initial-data-exploration`.
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         36120_26sp_group36_experiments and configuration for tools like black
+│                         nba_career_predictor and configuration for tools like black
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -39,9 +60,9 @@ AAdv ML AT1 repo for group 36
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── 36120_26sp_group36_experiments   <- Source code for use in this project.
+└── nba_career_predictor   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes 36120_26sp_group36_experiments a Python module
+    ├── __init__.py             <- Makes nba_career_predictor a Python module
     │
     ├── config.py               <- Store useful variables and configuration
     │

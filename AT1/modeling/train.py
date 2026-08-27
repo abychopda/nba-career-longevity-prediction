@@ -4,7 +4,7 @@ from loguru import logger
 from tqdm import tqdm
 import typer
 
-from nba_career_predictor.config import MODELS_DIR, PROCESSED_DATA_DIR
+from AT1.config import MODELS_DIR, PROCESSED_DATA_DIR
 
 app = typer.Typer()
 

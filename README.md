@@ -1,22 +1,16 @@
-# 36120-26SP-group36-experiments
+# NBA Career Prediction
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+## Project Overview
 
-AAdv ML AT1 repo for group 36
+This project investigates whether college-level basketball statistics can be used to predict whether a basketball player will go on to have a successful NBA career. A successful NBA career is defined as playing at least three NBA seasons.
 
-## Project Organization
+The repository contains the group's experiments, trained models, prediction outputs, notebooks, reports and supporting documentation.
+
+## Repository Structure
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
 │
 ├── docs               <- A default mkdocs project; see www.mkdocs.org for details
 │
@@ -34,12 +28,9 @@ AAdv ML AT1 repo for group 36
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
 │
-├── setup.cfg          <- Configuration file for flake8
 │
-└── 36120_26sp_group36_experiments   <- Source code for use in this project.
+└── nba_predictions   <- Source code for use in this project.
     │
     ├── __init__.py             <- Makes 36120_26sp_group36_experiments a Python module
     │
@@ -56,6 +47,28 @@ AAdv ML AT1 repo for group 36
     │
     └── plots.py                <- Code to create visualizations
 ```
+
+## Setup
+
+The project uses Python and the dependencies specified in `pyproject.toml` and `uv.lock`.
+
+Install the project dependencies before running the notebooks.
+
+## Running the Experiments
+
+The notebooks in `notebooks/` contain the data processing, model training, evaluation and prediction workflows.
+
+Run the notebooks in the appropriate order to reproduce the experiments and results.
+
+## Models and Predictions
+
+Trained models and associated model artefacts are stored in `models/`.
+
+NBA prediction outputs are stored in `nba_predictions/`.
+
+## Results
+
+Experiment results, reports and generated figures are stored in `reports/`.
 
 --------
 

@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "nba_career_predictor-26164448"
+name = "nba_career_predictor"
 version = "0.0.1"
 description = "AAdv ML AT1 repo for group 36"
 authors = [
@@ -20,7 +20,7 @@ dependencies = [
     "loguru",
     "matplotlib==3.9.4",
     "mkdocs",
-    "nba-career-toolkit",
+    "nba-career-toolkit-26164448",
     "numpy",
     "pandas==2.2.3",
     "pip",
@@ -40,7 +40,7 @@ requires-python = "==3.13.9"
 
 [tool.ruff]
 line-length = 99
-src = ["nba_career_predictor"]
+src = ["nba_career_predictor-2"]
 include = ["pyproject.toml", "nba_career_predictor/**/*.py"]
 
 [tool.ruff.lint]

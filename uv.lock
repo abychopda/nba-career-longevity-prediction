@@ -981,13 +981,13 @@ wheels = [
 [[package]]
 name = "nba-career-predictor"
 version = "0.0.1"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "jupyterlab" },
     { name = "loguru" },
     { name = "matplotlib" },
     { name = "mkdocs" },
-    { name = "nba-career-toolkit" },
+    { name = "nba-career-toolkit-26164448" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "pip" },
@@ -1008,7 +1008,7 @@ requires-dist = [
     { name = "loguru" },
     { name = "matplotlib", specifier = "==3.9.4" },
     { name = "mkdocs" },
-    { name = "nba-career-toolkit", editable = "../36120-26SP-group36-26164448-package" },
+    { name = "nba-career-toolkit-26164448", index = "https://test.pypi.org/simple/" },
     { name = "numpy" },
     { name = "pandas", specifier = "==2.2.3" },
     { name = "pip" },
@@ -1024,22 +1024,18 @@ requires-dist = [
 ]
 
 [[package]]
-name = "nba-career-toolkit"
+name = "nba-career-toolkit-26164448"
 version = "0.1.0"
-source = { editable = "../36120-26SP-group36-26164448-package" }
+source = { registry = "https://test.pypi.org/simple/" }
 dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn" },
     { name = "scipy" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "numpy", specifier = ">=1.26.4" },
-    { name = "pandas" },
-    { name = "scikit-learn" },
-    { name = "scipy" },
+sdist = { url = "https://test-files.pythonhosted.org/packages/9b/4e/f3e2b12b3d1f3cc3bc35bb6c04513abf5ddcf22717930d5510644172c3b6/nba_career_toolkit_26164448-0.1.0.tar.gz", hash = "sha256:ea54c089eeb04e9b5e0e30a668029ddd3a06880ed96bc1ed31019dcd5aa17a5d", size = 6550, upload-time = "2026-08-27T04:38:56.541Z" }
+wheels = [
+    { url = "https://test-files.pythonhosted.org/packages/d8/97/91b15914446c5933e1ce871d687ea804c97a424c1ec9c013ac1e84ce2ac3/nba_career_toolkit_26164448-0.1.0-py3-none-any.whl", hash = "sha256:4bcbdeeba9bdbd33a877d1fe5f3afad10378ed124ad1b8cee4e7769f88ebef2d", size = 6152, upload-time = "2026-08-27T04:38:54.906Z" },
 ]
 
 [[package]]

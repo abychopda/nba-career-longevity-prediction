@@ -4,7 +4,7 @@ from loguru import logger
 from tqdm import tqdm
 import typer
 
-from 36120_26sp_group36_experiments.config import FIGURES_DIR, PROCESSED_DATA_DIR
+from nba_predictions.config import FIGURES_DIR, PROCESSED_DATA_DIR
 
 app = typer.Typer()
 

@@ -1006,7 +1006,7 @@ requires-dist = [
     { name = "loguru" },
     { name = "matplotlib", specifier = "==3.9.4" },
     { name = "mkdocs" },
-    { name = "nba-career-toolkit", editable = "../36120-26SP-group36-26666293-package" },
+    { name = "nba-career-toolkit", specifier = "==1.0.0", index = "https://test.pypi.org/simple/" },
     { name = "pandas", specifier = "==2.2.3" },
     { name = "pip" },
     { name = "python-dotenv" },
@@ -1022,20 +1022,15 @@ requires-dist = [
 [[package]]
 name = "nba-career-toolkit"
 version = "1.0.0"
-source = { editable = "../36120-26SP-group36-26666293-package" }
+source = { registry = "https://test.pypi.org/simple/" }
 dependencies = [
     { name = "pandas" },
     { name = "scikit-learn" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "pandas", specifier = "==2.2.3" },
-    { name = "scikit-learn", specifier = "==1.6.1" },
+sdist = { url = "https://test-files.pythonhosted.org/packages/97/f2/e5151a5462c12af418c806940abbde9bab69952fafab825d5485858426d7/nba_career_toolkit-1.0.0.tar.gz", hash = "sha256:e20c208b306119eb8c43efb92308a848b7835b9b2b263d55aa4d384a6e28b76d", size = 7235, upload-time = "2026-08-26T08:14:57.976Z" }
+wheels = [
+    { url = "https://test-files.pythonhosted.org/packages/e9/c9/e940e586659d7b98e6ffe6907d19b8ebf6154b576a9dfb98f26060cd6d12/nba_career_toolkit-1.0.0-py3-none-any.whl", hash = "sha256:a9ceb4b9f672aa9669167a1b585346500b08b4f15822d997d80f0c8889027b9a", size = 10667, upload-time = "2026-08-26T08:14:55.172Z" },
 ]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=9.1.1" }]
 
 [[package]]
 name = "nbclient"

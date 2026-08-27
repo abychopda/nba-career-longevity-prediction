@@ -6,6 +6,27 @@
 
 AAdv ML AT1 repo for group 36
 
+## Getting Started
+
+Requires [uv](https://docs.astral.sh/uv/) and Python 3.13.9.
+
+```bash
+uv sync
+```
+
+`nba-career-toolkit` resolves from TestPyPI automatically; pandas, scikit-learn and the rest
+resolve from PyPI as normal. No extra flags are needed for `uv sync` — a plain `pip install
+-r requirements.txt` will not find the toolkit, since only `uv sync` reads the index
+configuration in `pyproject.toml`.
+
+**Before running any notebook**, add the Kaggle competition's raw files to `data/raw/`:
+`train.csv`, `test.csv`, `sample_submission.csv`, `metadata.csv`. This directory is
+gitignored and not part of the repository.
+
+```bash
+uv run jupyter lab
+```
+
 ## Project Organization
 
 ```

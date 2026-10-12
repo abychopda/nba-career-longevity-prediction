@@ -1,4 +1,4 @@
-# 36120-26SP-group36-experiments documentation!
+# NBA Career Longevity Prediction — documentation
 
 ## Description
 

@@ -1,10 +1,29 @@
-# 36120-26SP-group36-experiments
+# NBA Career Longevity Prediction
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+Predicting which college basketball players will go on to play **at least three NBA seasons**,
+using player and season performance data from a Kaggle competition.
 
-AAdv ML AT1 repo for group 36
+The target is heavily imbalanced: only **3.42%** of the 41,195 training players are positive.
+Accuracy is meaningless here (an all-negative model scores ~97%), so models are compared on
+**Average Precision (AUPRC)** with stratified splits.
+
+## Results
+
+| Experiment | Approach | Features | Validation AUPRC | Kaggle AUPRC |
+|---|---|---:|---:|---:|
+| E1 | Logistic Regression (C = 0.1, tuned) | 59 | 0.4448 | 0.6012 |
+| E2 | LightGBM (tuned) | 59 | 0.4538 | 0.5716 |
+| **E3** | **Logistic Regression + feature selection** | **39** | — | **0.6039** |
+
+**Takeaways**
+
+- LightGBM edged ahead on validation but generalised worse on Kaggle — more model complexity did not pay off on this data.
+- Dropping correlated features *hurt* (−0.008 AUPRC), while dropping the weakest-coefficient features helped slightly: correlation alone was not a safe pruning rule here.
+- The simpler, regularised linear model was the best and most interpretable candidate.
+
+My experiment notebooks are in [`notebooks/abhishek_25611094/`](notebooks/abhishek_25611094/).
+Shared preprocessing, modelling and evaluation helpers live in
+[`nba-career-ml-toolkit`](https://github.com/abychopda/nba-career-ml-toolkit).
 
 ## Getting Started
 
@@ -80,3 +99,8 @@ uv run jupyter lab
 
 --------
 
+## About
+
+Built with Christian Rand as part of 36120 Advanced Machine Learning Application
+at the University of Technology Sydney (Spring 2026). Project scaffolded with
+[Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org/).
